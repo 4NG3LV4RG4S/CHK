@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <app-root></app-root>
+</body>
+</html>
+
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+}
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.form-container h1 {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.input-group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    color: #333;
+}
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #333;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+.input-group input:focus + i,
+.input-group input:valid + i {
+    transform: translateY(-50%) scale(1.2);
+}
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Agregamos estilos adicionales para los inputs y el botón */
+.input-group input {
+    border: 2px solid #ccc; /* Agregamos un borde */
+    transition: border-color 0.3s ease; /* Transición suave al enfocar */
+}
+
+.input-group input:focus {
+    border-color: #ff6600; /* Cambiamos el color del borde al enfocar */
+}
+
+/* Estilo para el botón */
+.form-container button {
+    width: 100%;
+    padding: 12px; /* Aumentamos el padding */
+    background: #ff6600; /* Cambiamos el color de fondo */
+    border: none;
+    border-radius: 25px; /* Aumentamos el radio de borde para hacerlo redondeado */
+    outline: none;
+    font-size: 1.2rem; /* Aumentamos el tamaño del texto */
+    color: #fff; /* Cambiamos el color del texto a blanco */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+.form-container button:hover {
+    background-color: #e65100; /* Cambiamos el color de fondo al pasar el mouse */
+}
+
+
+</style>
